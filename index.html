@@ -1,57 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZONAVENTAS - Imágenes Religiosas</title>
-
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; background:#f3f3f3; }
-        header {
-            background: #0a0a0a; color: white; padding: 20px;
-            text-align: center; font-size: 28px; letter-spacing: 2px;
-        }
-        .container { padding: 20px; }
-        .producto {
-            background: white; padding: 15px; border-radius: 10px;
-            margin: 15px 0; box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .producto img { width: 100%; border-radius: 10px; }
-        .btn {
-            display: inline-block; background:#0a0a0a; color:white;
-            padding:10px 15px; border-radius:5px; text-decoration:none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZonaVentas - Artículos Religiosos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f6f6;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: #ffffff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    #logo {
+      max-width: 160px;
+    }
+    h1 {
+      margin-top: 10px;
+      font-size: 28px;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .item {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 40px;
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    }
+  </style>
 </head>
-
 <body>
-    <header>ZONAVENTAS - Imágenes Religiosas</header>
 
-    <div class="container">
-        <h2>Catálogo de Imágenes Religiosas</h2>
+  <header>
+    <img id="logo" src="logo.png" alt="Logo ZonaVentas" />
+    <h1>Artículos Religiosos</h1>
+  </header>
 
-        <div class="producto">
-            <img src="https://i.imgur.com/6oK6n4K.jpg" alt="Sagrado Corazón">
-            <h3>Sagrado Corazón de Jesús</h3>
-            <p>Imagen religiosa en alta calidad, ideal para el hogar o negocios.</p>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-
-        <div class="producto">
-            <img src="https://i.imgur.com/Y7O7l3S.jpg" alt="Virgen María">
-            <h3>Virgen María</h3>
-            <p>Impresión de la Virgen María en estilo clásico, tamaño personalizable.</p>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-
-        <div class="producto">
-            <img src="https://i.imgur.com/IVFr8Kf.jpg" alt="San Miguel Arcángel">
-            <h3>San Miguel Arcángel</h3>
-            <p>Santo protector, ideal para bendición y protección del hogar.</p>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-
+  <section class="productos">
+    <div class="item">
+      <img src="producto1.jpg" alt="Producto 1" />
+      <h3>Rosario de madera</h3>
+      <p>$20.000 COP</p>
     </div>
+
+    <div class="item">
+      <img src="producto2.jpg" alt="Producto 2" />
+      <h3>Imagen Sagrado Corazón</h3>
+      <p>$35.000 COP</p>
+    </div>
+
+    <div class="item">
+      <img src="producto3.jpg" alt="Producto 3" />
+      <h3>Virgen de Guadalupe</h3>
+      <p>$30.000 COP</p>
+    </div>
+  </section>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="whatsapp" href="https://wa.me/573163811694?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank">Pedidos</a>
 
 </body>
 </html>
